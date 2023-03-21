@@ -1,0 +1,8 @@
+namespace: experimental-redis-cluster
+resources:
+  - namespace.yml
+  - redis.yml
+configMapGenerator:
+- name: redis-conf
+  files:
+  - redis.conf
